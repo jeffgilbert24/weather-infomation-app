@@ -25,12 +25,11 @@
                     <h4>Search for city:</h4>
                   </div>
                   <!--Input text box-->
-                  <div id="search-input" class="input-group input-group-sm mb-3">
-                    
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Search!">
+                  <div id="search-input" class="input-group input-group-sm mb-3">                    
+                    <input type="text" class="form-control" placeholder="Search!">
                   </div>
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" id="searchBtn" type="submit">Button</button>
                     
                   </div>
                   
@@ -39,13 +38,12 @@
               <div class="col">
                 <!--Main card with name of city-->
                 <div class="card" style="width: 18rem;">
-                  <div class="card-header">
-                    Featured
-                  </div>
+                  <div class="card-header" id="city-name">City</div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
+                    <li class="current-temp">Temp</li>
+                    <li class="current-wind">Wind</li>
+                    <li class="current-humidity">humidity</li>
+                    <li class="current-UV">UV</li>
                   </ul>
                 </div>
                 <h3>5-Day Forecast:</h3>
