@@ -30,10 +30,14 @@ var weather =  {
 };
 var displayWeather = function(data){
     const {name} = data;
-    const {temp,humidity} = data.main;
+    const {temp} = data.main.temp;
+    const {humidity} = data.main;
     const {speed} = data.wind;
-    console.log(name, humidity, speed);
+    console.log(name, humidity, speed);    
     document.querySelector("#city-name").innerHTML = name;
+    document.querySelector(".current-temp").innerHTML = temp;
+    document.querySelector(".current-humidity").innerHTML = humidity;
+    document.querySelector()
 
 }
 
